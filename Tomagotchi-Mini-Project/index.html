@@ -12,35 +12,66 @@
 </head>
 <body>
 
-	<img class = "img" src="bird.png">
+	<img class = 'img' src='bird.png'>
 
-	<div class="petName">
-		<input class = "text" type="text" placeholder="Enter Pet Name">
-		<button class="enter-btn">Enter</button>
-	</div>
 	<!-- this div is for the whole device -->
-	<div id = "device">
+	<div id = 'device'>
 		<!-- Title of game -->
-		<div class="title">
+		<div class='title'>
 			<h1>Tomagotchi</h1>
 		</div>
-		<!-- div for the screen of the device to display -->
-		<div class="screen">
-			<p>Hunger</p>
-			<progress class="Hunger" value="1" max="10"></progress>
-			<p>Sleepiness</p>
-			<progress value="10" max="10" ></progress>
-			<p>Boredom</p>
-			<progress value="10" max="1" ></progress>
+
+	<!-- asking for user name input -->
+		<div class="petName">
+        	<input class = "name" type="text" placeholder="Enter Pet Name">
+        	<button class="enterName">Enter</button>
+        	<contain></contain>
+    	</div>
+<!-- BUTTON TO START GAME -->
+		<div class="">
+			<button class="startBtn">Start</button>
 		</div>
 
-		<div class="btns">
-			<button class="feed">Feed</button>
-			<button>Lights Off</button>
-			<button>Play Time</button>
+		<!-- div for the screen of the device to display -->
+		<div class='screen'>
+			<!-- HUNGER BAR -->
+			<p>Hunger</p>
+			<progress class='Hunger' value='10' max='10'></progress>
+			<!-- SLEEPINES BAR -->
+			<p>Sleepiness</p>
+			<progress class = 'Sleepiness' value='10' max='10' ></progress>
+			<!-- BOREDOM -->
+			<p>Boredom</p>
+			<progress class='Boredom' value='10' max='10' ></progress>
+			<p>Age</p>
+			<progress class="age" value="0" max="10"></progress>
 		</div>
-		
-	</div>
-	<script src="app.js"></script>
+
+		<!-- BUTTON FOR CONTROL YOUR PET-->
+		<div class='btns'>
+			<!-- BUTTON TO FEED THE PET -->
+			<button class='feed'>Feed</button><br>
+			<!-- BUTTON TO TURN OFF THE LIGH WHEN  -->
+			<button class='lightOff'>Lights Off</button><br>
+			<!-- BUTTON TO PLAY WITH PET -->
+			<button class='play'>Play Time</button>
+<!-- 
+			<button id='optButton' class='adderal'>Adderal</button> -->
+
+		</div>
+
+<!--  -->
+
+		<!-- <h1>
+  			<em>C</em>
+  			<em class="planet left">O</em>
+  			<em>S</em>
+  			<em>M</em>
+  			<em class="planet right">O</em>
+  			<em>S</em>
+		</h1> -->
+
+<!--  -->
+	<script src='app.js'></script>
 </body>
 </html>
