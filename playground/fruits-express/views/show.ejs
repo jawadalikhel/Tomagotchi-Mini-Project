@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1>Fruits show page</h1>
+  <h2> The <%= fruit.name %> color is <%= fruit.color %></h2>
+
+  <% if(fruit.readyToEat === true) {%>
+        <h3>It is ready to eat now </h3>
+  <%} else { %>
+    <h3>Not ready to eat yet</h3>
+  <%}%>
+</body>
+</html>
