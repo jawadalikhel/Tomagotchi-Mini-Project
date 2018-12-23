@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   <head>
 
@@ -23,6 +23,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+
+    <style>
+      #additional {
+        /* margin-top: 3em; */
+      }
+
+    </style>
 
   </head>
 
@@ -100,7 +107,7 @@
             <div class="row">
 
               <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box mt-5 mx-auto">
+                <div class="service-box mt-5 mx-auto" style="width:13em;">
                   <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3" style="padding-bottom: .2em;"></i>
                   <h3 class="mb-3">Front End</h3>
                   <p class="text-muted mb-0">JavaScript</p>
@@ -114,7 +121,7 @@
 
               <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box mt-5 mx-auto">
-                  <img src="https://www.kunshtech.com/Images/homepage/icon1b.svg" style="width:4em; padding-bottom: 2em;">
+                  <img src="https://www.kunshtech.com/Images/homepage/icon1b.svg" style="width:4em; padding-top: 1.8em;">
                   <h3 class="mb-3">Back End</h3>
                   <p class="text-muted mb-0">Node.js</p>
                   <p class="text-muted mb-0">Express.js</p>
@@ -123,9 +130,9 @@
                </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box mt-5 mx-auto">
-                  <img src="https://www.dayjob.com/images/pic_m4_skills__icon-01.png" style="width:4em; padding-bottom: 2em;">
+              <div class="col-lg-3 col-md-6 text-center" id="additional">
+                <div class="service-box mt-5 mx-auto" style="width:20em;">
+                  <img style="width:4em; padding-bottom: 2em;" src="data:image/png;base64,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" />
                   <h3 class="mb-3">Additional Skills</h3>
                   <p class="text-muted mb-0">Adobe Photoshop</p>
                   <p class="text-muted mb-0">Adobe Illustrator</p>
@@ -149,7 +156,7 @@
           </div>
         </div>
 
-        <!--  project 2-->
+        <!--  project 1-->
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -174,13 +181,14 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/check.svg" style="height: 13.5em; padding-left: 1em; margin-top: -1em;" alt="">
+              <img class="img-fluid" src="img/check.svg" style="height: 9em; padding-left: 1.5em; margin-top: -.5em;" alt="">
             </a><br /><br />
             <div class="portfolio-caption">
-              <h4>Todo List</h4>
+              <h4 style="margin-left: 1.5em;">Todo List</h4>
               <!-- <p class="text-muted">Graphic Design</p> -->
             </div>
           </div>
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
@@ -188,53 +196,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/check.svg" style="height: 9em; padding-left: 1.5em; margin-top: -.5em;" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Hangmen Game</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h4 style="margin-left: 1.5em;">Balance</h4>
+              <!-- <p class="text-muted">Identity</p> -->
             </div>
           </div>
         </div>
@@ -275,7 +241,7 @@ Chef To Go is a full-stack application that consists on having an easy way to bo
               <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>
                 <!-- Close Project</button> -->
-                <a href="https://github.com/jawadalikhel/Projects/tree/master/chef-2-go"><button style="background: darkorange; color: white; border-radius: 10%; margin-left: 3em; width: 5em; height: 3em; margin-bottom: 10em;">Github</button></a>
+                <a href="https://github.com/jawadalikhel/Projects/tree/master/chef-2-go" target="_blank"><button style="background: darkorange; color: white; border-radius: 10%; margin-left: 3em; width: 5em; height: 3em; margin-bottom: 10em;">Github</button></a>
             </div>
           </div>
         </div>
@@ -290,6 +256,44 @@ Chef To Go is a full-stack application that consists on having an easy way to bo
 
 <!-- Modal 2 -->
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="close-modal" data-dismiss="modal">
+    <div class="lr">
+      <div class="rl"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="modal-body">
+          <!-- Project Details Go Here -->
+          <h2 class="text-uppercase">Todo List</h2>
+          <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+          <img class="img-fluid d-block mx-auto" src="img/todo.png" alt=""><br/>
+          <p>This is a Todo list App. This app lets user add the items they need to complete for the day. The user has the choice check the checkbox to complete the item. Once the user clicks on checkbox it will cross that item and at the bottom of the screen it will show how many items the user have completed.</p>
+          <ul class="list-inline">
+            <h3>Technologies Used</h3>
+            <li>React.js</li>
+            <li>EJS and HTML</li>
+            <li>CSS</li>
+          </ul>
+          <button class="btn btn-primary" data-dismiss="modal" type="button">
+            <i class="fas fa-times"></i>
+            <!-- Close Project</button> -->
+            <a href="https://github.com/jawadalikhel/Projects/tree/master/todo-list-full-stack" target="_blank"><button style="background: darkorange; color: white; border-radius: 10%; margin-left: 3em; width: 5em; height: 3em; margin-bottom: 10em;">Github</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
   <div class="close-modal" data-dismiss="modal">
@@ -342,10 +346,11 @@ Chef To Go is a full-stack application that consists on having an easy way to bo
 
 
 
+
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <h2 class="mb-4">Other Projects on Github</h2>
+        <a class="btn btn-light btn-xl sr-button" href="https://github.com/jawadalikhel/Projects" target="_blank">Github</a>
       </div>
     </section>
 
@@ -359,14 +364,10 @@ Chef To Go is a full-stack application that consists on having an easy way to bo
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>123-456-6789</p>
-          </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="jawadalikhel18@gmail.com">jawadalikhel18@gmail.com</a>
             </p>
           </div>
         </div>
